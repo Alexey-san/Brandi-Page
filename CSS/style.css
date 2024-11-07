@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.fonimage {
+	background-image: url(fon.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Header and Navigation */
+header {
+    background-color: rgba(16, 22, 54, 0.2);
+    padding: 0 0;
+    min-height: 30px
+}
+.conteine{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;  
+}
+.conteine .menu {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+	margin-left: auto;
+}
+.logo img {
+    width: 150px;
+}
+.menu {
+	align-items: center;
+}
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+.menu-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.menu-item:hover {
+    color: #1abc9c;
+}
+/* Hero Section */
+.golovna {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;;
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.golovna h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.golovna p {
+    font-size: 1.2em;
+}
+/* Feature Section */
+.golovna {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    text-align: center;
+}
+.golovna h2 {
+    font-size: 2.5em;
+    color: white;
+}
+.golovnatext .weare{
+	color: white
+}
+.pictogramesite {
+    gap: 2px;
+    padding-top: 20px;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.golovna .golovnatext span,.golovna .golovnatext h3 {
+    color: #1abc9c;
+    font-weight: bold;
+}
+.golovna .golovnatext span h9 {
+    background-color: aliceblue;
+}
+.fa {
+	width: 10px;
+	height: 10px;
+	object-fit: cover;
+	border-radius: 50%;
+    list-style-type: none;
+}
+/* Services */
+.servis-items {
+	display: flex;
+	flex-wrap: wrap;
+    text-align: center;
+	align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.servis-items .servis-icon {
+    font-size: 2em;
+    color: #1abc9c;
+}
+.servis-items .servis-text h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+
+
+.feature {
+    display: flex;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10%;
+    font-size:  20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.title h2{
+    color: #1abc9c;
+}
+.counter {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+}
+.icons {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    text-align: center;
+    color: black;
+}
+.b {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;;
+    text-align:justify;
+    font-size: 15px
+}
+
+
+
+
+/* Work Section */
+.Work {
+        background-color: #f7f7f7;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.Work .conteiners {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+}
+.Work .block {
+    justify-content: center;
+}
+
+.Work .block img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.Word .p {
+    align-items: center;
+}
+.Work .list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.pictogr {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+}
+.menu-picture {
+    gap: 100px;
+    width: 100px;
+    height: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+.line-menu {
+    margin-top: 5px;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+}
+.line-menu:hover {
+    width: 120px;
+    height: 25px;
+    background-color: #1abc9c;
+    text-align: center;
+    border-radius: 10%;
+}
+.line-menu p:hover {
+    margin-top: 3px;
+    color: white;
+    height: 30px;
+    width: 120px;
+}
+.galeryphoto {
+    display: flex;
+    justify-content: space-around;
+    
+}
+/* Контейнер для галереи */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 колонки с минимальной шириной 200px */
+            gap: 40px; /* Отступы между колонками */
+            justify-content: center; /* Центрируем содержимое галереи */
+            width: 100%;
+            max-width: 1200px; /* Ограничиваем максимальную ширину галереи */
+            margin: 0 auto; /* Центрируем галерею на странице */
+        }
+
+        /* Элементы галереи */
+        .gallery-item {
+    overflow: hidden; /* Скрывает части контента, выходящие за границы элемента */
+    position: relative; /* Устанавливает относительное позиционирование для возможности добавления псевдоэлементов или других эффектов */
+    transition: transform 0.3s ease; /* Добавляет плавный переход для любых изменений transform (например, увеличение при наведении) */
+    cursor: pointer; /* Изменяет курсор на указатель, что указывает на кликабельность элемента */
+}
+
+        /* Эффект при наведении */
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Изображение внутри элемента */
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Адаптивные стили для уменьшения количества колонок на маленьких экранах */
+        @media (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 колонки на средних экранах */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 колонка на маленьких экранах */
+                gap: 20px; /* Уменьшаем отступы на мобильных устройствах */
+            }
+        }
+
+
+
+
+/* Team Section */
+.people {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.text {
+    margin-top: 60px;
+}
+.autors {
+    display:flex;
+    justify-content: space-between;
+}
+.people .piplephoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.piplephoto .image {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.image h4 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.image h6 {
+    color: #1abc9c;
+}
+
+/* Fun Facts Section */
+.facts {
+    background: url('fon2.png');
+    filter: brightness(75%);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Основний стиль для секції "Fun Facts" */
+    .fun-facts {
+        text-align: center; /* Центрує текст всередині секції */
+        padding: 50px 0; /* Додає відступи зверху та знизу */
+        background: rgba(0, 0, 0, 0.7); /* Напівпрозорий темний фон для читабельності */
+    }
+    
+    /* Стиль для заголовка секції */
+    .fun-facts h2 {
+        color: #00b894; /* Зелений колір тексту заголовка */
+        font-size: 24px; /* Розмір шрифту заголовка */
+        margin-bottom: 40px; /* Відступ знизу для відокремлення від контенту */
+        font-weight: bold; /* Напівжирний текст */
+        text-transform: uppercase; /* Преобразує текст заголовка в верхній регістр */
+    }
+    
+    /* Контейнер для групи показників */
+    .fact-container {
+        display: flex; /* Використовує Flexbox для вирівнювання елементів в рядок */
+        justify-content: center; /* Вирівнює елементи по центру */
+        gap: 50px; /* Проміжок між елементами "fact" */
+        max-width: 1000px; /* Максимальна ширина контейнера */
+        margin: 0 auto; /* Центрує контейнер по горизонталі */
+        flex-wrap: wrap; /* Дозволяє елементам переходити на новий рядок на вузьких екранах */
+    }
+    
+    /* Стиль для кожного елемента "fact" */
+    .fact {
+        text-align: center; /* Центрує текст всередині кожного "fact" */
+        width: 150px; /* Фіксована ширина для кожного елемента "fact" */
+    }
+    
+    /* Стиль для зображень всередині кожного елемента "fact" */
+    .fact img.fact-image {
+        width: 60px; /* Розмір зображення */
+        height: 60px; /* Задає висоту зображення */
+        margin-bottom: 10px; /* Відступ знизу для розділення з числом */
+    }
+    
+    /* Стиль для числових значень (h3) всередині "fact" */
+    .fact h3 {
+        font-size: 32px; /* Розмір шрифту для числа */
+        margin: 10px 0; /* Відступ зверху та знизу для розділення */
+        color: white; /* Колір тексту - білий */
+    }
+    
+    /* Стиль для підписів (p) всередині "fact" */
+    .fact p {
+        font-size: 14px; /* Розмір шрифту для підпису */
+        text-transform: uppercase; /* Преобразує підпис в верхній регістр */
+        color: white; /* Колір тексту - білий */
+    }
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+        color: #00b894;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .contact-section .description {
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 40px;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+.contact-form {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+.contact-info {
+     width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+        display: block;
+        align-items: center;
+        margin-top: 60px
+}
+    .contact-info h3, .contact-form h3 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        color: #777;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form input, .contact-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        border: none;
+        background-color: #00b894;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+
+/* Footer */
+.footer {
+    background-color: #00b894; /* Зелений фон для всього футера */
+    color: white; /* Білий колір тексту */
+    padding: 40px 100px; /* Відступи зверху/знизу та з боків */
+}
+
+.footer-content {
+    display: flex; /* Гнучке розташування для дочірніх елементів */
+    justify-content: space-between; /* Простір між блоками */
+    flex-wrap: wrap; /* Дозволяє блокам переноситись на новий рядок на малих екранах */
+    max-width: 1200px; /* Максимальна ширина контейнера футера */
+    margin: 0 auto; /* Центрування контейнера */
+}
+
+.footer-brand, .footer-subscribe, .footer-links div {
+    margin-bottom: 20px; /* Відступ знизу між блоками */
+    max-width: 300px; /* Максимальна ширина кожного блоку */
+}
+
+.footer-brand h3 {
+    font-size: 24px; /* Розмір шрифту для назви бренду */
+    margin-bottom: 10px; /* Відступ знизу */
+}
+
+.footer-subscribe h4, .footer-links h4 {
+    font-size: 18px; /* Розмір шрифту для заголовків у футері */
+    margin-bottom: 10px; /* Відступ знизу для простору */
+}
+
+.footer-subscribe form {
+    display: flex; /* Гнучке розташування для полів форми */
+    gap: 10px; /* Відступ між полями форми */
+}
+
+.footer-subscribe input {
+    padding: 8px; /* Відступи всередині поля */
+    border-radius: 4px; /* Закруглені кути поля */
+    border: none; /* Видаляє рамку */
+    flex-grow: 1; /* Поле займає всю доступну ширину */
+}
+
+.footer-subscribe button {
+    padding: 8px 12px; /* Відступи всередині кнопки */
+    border-radius: 4px; /* Закруглені кути кнопки */
+    border: none; /* Видаляє рамку */
+    background-color: #333; /* Темний фон для кнопки */
+    color: white; /* Білий колір тексту */
+    cursor: pointer; /* Вказівник змінюється на руку при наведенні */
+}
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-links ul {
+    list-style: none; /* Видаляє маркери списку */
+    padding: 0; /* Видаляє внутрішній відступ */
+}
+
+.footer-links li {
+    margin-bottom: 8px; /* Відступ знизу для елементів списку */
+}
+
+.footer-links a {
+    color: white; /* Білий колір для посилань */
+    text-decoration: none; /* Видаляє підкреслення */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+/* Підвал копірайту */
+.footer-copyright {
+    text-align: center; /* Вирівнює текст по центру */
+    color: #eee; /* Світло-сірий колір тексту */
+    margin-top: 20px; /* Відступ зверху для простору */
+    font-size: 14px; /* Розмір шрифту копірайту */
+}
